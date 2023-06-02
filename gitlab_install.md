@@ -8,8 +8,9 @@ shell
 
 
 Copy code
-sudo apt update
-sudo apt upgrade -y
+
+# sudo apt update
+# sudo apt upgrade -y
 
 
 
@@ -28,7 +29,8 @@ shell
 
 
 Copy code
-curl -sS https://packages.gitlab.com/install/repositories/gitlab/gitlab-ce/script.deb.sh | sudo bash
+
+#  curl -sS https://packages.gitlab.com/install/repositories/gitlab/gitlab-ce/script.deb.sh | sudo bash
 
 
 
@@ -38,7 +40,7 @@ shell
 
 
 Copy code
-sudo apt install -y gitlab-ce
+#  sudo apt install -y gitlab-ce
 
 
 
@@ -47,7 +49,7 @@ shell
 
 
 Copy code
-sudo nano /etc/gitlab/gitlab.rb
+#  sudo nano /etc/gitlab/gitlab.rb
 
 
 
@@ -58,7 +60,7 @@ shell
 
 
 Copy code
-sudo gitlab-ctl reconfigure
+#  sudo gitlab-ctl reconfigure
 
 
 This command will apply the configuration changes and start GitLab services.
