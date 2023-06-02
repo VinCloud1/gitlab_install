@@ -1,3 +1,8 @@
+# Login would be root and password would be initial generated password avaiable in sudo cat /etc/gitlab/initial_root_password
+
+
+# Ubuntu t2 medium machine will be good 
+
 To install GitLab on an Amazon EC2 instance, you can follow these general steps:
 Launch an EC2 instance: Start by creating an EC2 instance in the AWS Management Console. Choose an instance type that meets the requirements for running GitLab, such as sufficient CPU, RAM, and storage.
 Set up the instance: Configure the security group settings to allow incoming traffic on the necessary ports, such as HTTP (80) and HTTPS (443) for accessing GitLab's web interface. You may also need to open additional ports for SSH access or other services as required.
@@ -67,3 +72,8 @@ This command will apply the configuration changes and start GitLab services.
 
 Access GitLab: Once the reconfiguration is complete, you should be able to access GitLab's web interface by navigating to the external URL you specified in the configuration.
 These steps provide a general overview of the process. However, please note that the specific commands and configuration details may vary depending on the Linux distribution you are using and any specific requirements or customizations you may have. Be sure to consult the official GitLab documentation for detailed instructions tailored to your setup.
+
+to check the gitlab version details
+
+# sudo gitlab-rake gitlab:env:info
+
